@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.tracker.screens.RegistrationActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full Name"
+            android:inputType="textCapWords"
+            android:textColor="@color/dark_black"
+            android:maxLength="50"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile Number"
+            android:maxLength="10"
+            android:textColor="@color/dark_black"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email-Id"
+            android:maxLength="50"
+            android:textColor="@color/dark_black"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date Of Birth"
+            android:focusableInTouchMode="false"
+            android:maxLength="50"
+            android:textColor="@color/dark_black"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spnCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:dropDownSelector="#00000000"
+            android:dropDownVerticalOffset="0.8dp"
+            android:spinnerMode="dropdown"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spnCrew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:dropDownSelector="#00000000"
+            android:dropDownVerticalOffset="0.8dp"
+            android:spinnerMode="dropdown"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:background="#1b6a89"
+            android:layout_gravity="center_horizontal"
+            android:text="REGISTER" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_black"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="You have successfully Registered with us. Please report on desk on day of event."/>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:background="#1b6a89"
+        android:layout_gravity="center_horizontal"
+        android:text="DONE" />
+</LinearLayout>

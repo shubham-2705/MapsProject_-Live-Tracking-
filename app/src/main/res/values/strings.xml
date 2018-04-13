@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tracker</string>
+    <string name="error_network_not_available">Communication Failure with server. \nPlease Check GPRS Settings in Handset.</string>
+    <string name="something_went_wrong">Something went wrong. Please try again later.</string>
+</resources>
